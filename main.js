@@ -14,7 +14,7 @@ function adicionarContato(){
     const inputNomeContato = document.getElementById('nome-contato')
     const inputContato = document.getElementById('contato')
 
-    if (contatos.includes(inputContato.value) == (inputContato.value)){
+    if (contatos.includes(inputContato.value)){
         alert(`O contato ${inputContato.value} ja foi inserido`)
     } else{
 
