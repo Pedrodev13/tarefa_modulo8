@@ -14,6 +14,10 @@ function adicionarContato(){
     const inputNomeContato = document.getElementById('nome-contato')
     const inputContato = document.getElementById('contato')
 
+    if (contatos.includes(inputContato.value)){
+        alert(`O contato ${inputContato.value} ja foi inserido`)
+    } else{
+
     nome.push(inputNomeContato.value);
     contatos.push(parseInt(inputContato.value));
 
@@ -22,6 +26,7 @@ function adicionarContato(){
     linha += `<td> ${inputContato.value}</td>`
     linha += '</tr>';
     linhas += linha;
+    }
 
     inputNomeContato.value = '';
     inputContato.value = '';
